@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flaticon Image URL Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Flaticon Image URL Generator</h1>
+    <form id="image-form">
+      <label for="page-url">Flaticon Page URL:</label>
+      <input type="text" id="page-url" placeholder="Enter the Flaticon page URL" required>
+
+      <label for="image-size">Image Size:</label>
+      <select id="image-size">
+        <option value="512">512px</option>
+        <option value="256">256px</option>
+        <option value="128">128px</option>
+      </select>
+
+      <button type="button" id="generate-btn">Generate Image URL</button>
+    </form>
+
+    <div id="result-container">
+      <label for="result-url">Generated Image URL:</label>
+      <input type="text" id="result-url" readonly>
+      <button id="copy-btn">Copy</button>
+      <button id="open-btn">Open Image</button>
+    </div>
+
+    <div id="error-message"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
