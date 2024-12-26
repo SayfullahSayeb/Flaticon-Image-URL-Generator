@@ -1,0 +1,82 @@
+:root {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --primary-color: #1db954;
+  --error-color: #ff5252;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin: 10px 0 5px;
+}
+
+input, select, button {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 6px;
+}
+
+input, select {
+  background: #333;
+  color: var(--text-color);
+}
+
+button {
+  background: var(--primary-color);
+  color: var(--text-color);
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #1aa34a;
+}
+
+#error-message {
+  color: var(--error-color);
+  margin-top: 10px;
+  text-align: center;
+  display: none;
+}
+
+#result-container {
+  display: none;
+  flex-direction: column;
+}
+
+#result-url {
+  background: #333;
+  color: var(--text-color);
+}
