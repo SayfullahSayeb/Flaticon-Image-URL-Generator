@@ -4,33 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Flaticon Image URL Generator</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="container">
     <h1>Flaticon Image URL Generator</h1>
-    <form id="image-form">
-      <label for="page-url">Flaticon Page URL:</label>
-      <input type="text" id="page-url" placeholder="Enter the Flaticon page URL" required>
+    <input id="page-url" type="text" placeholder="Enter Flaticon Page URL">
+    <select id="image-size">
+      <option value="512">512px</option>
+      <option value="256">256px</option>
+      <option value="128">128px</option>
+      <option value="64">64px</option>
+      <option value="32">32px</option>
+      <option value="24">24px</option>
+      <option value="16">16px</option>
+    </select>
+    <button id="generate-btn">Generate Image URL</button>
+    <div id="error-message" class="error-message"></div>
 
-      <label for="image-size">Image Size:</label>
-      <select id="image-size">
-        <option value="512">512px</option>
-        <option value="256">256px</option>
-        <option value="128">128px</option>
-      </select>
+<div id="result-container" class="result-container">
+  <input id="result-url" type="text" readonly>
+  <div class="button-container">
+    <button id="copy-btn">Copy Link</button>
+    <button id="open-btn">Open Image</button>
+  </div>
+</div>
 
-      <button type="button" id="generate-btn">Generate Image URL</button>
-    </form>
 
-    <div id="result-container">
-      <label for="result-url">Generated Image URL:</label>
-      <input type="text" id="result-url" readonly>
-      <button id="copy-btn">Copy</button>
-      <button id="open-btn">Open Image</button>
+    <div id="copied-message" class="copied-message">Copied to clipboard!</div>
+
+    <div class="github-repo">
+      <p>⭐ Star this project on GitHub:</p>
+      <a href="https://github.com/ssayeb7/Flaticon-Image-URL-Generator" target="_blank">Flaticon Image URL Generator</a>
     </div>
-
-    <div id="error-message"></div>
   </div>
   <script src="script.js"></script>
 </body>
