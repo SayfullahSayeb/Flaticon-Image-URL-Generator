@@ -33,5 +33,10 @@ document.getElementById('copy-btn').addEventListener('click', function () {
   resultUrl.select();
   resultUrl.setSelectionRange(0, 99999);
   document.execCommand('copy');
-  alert('Copied to clipboard!');
+
+  const copiedMessage = document.getElementById('copied-message');
+  copiedMessage.style.display = 'block';
+  setTimeout(() => {
+    copiedMessage.style.display = 'none';
+  }, 2000);
 });
