@@ -1,14 +1,7 @@
-:root {
-  --bg-color: #121212;
-  --text-color: #ffffff;
-  --primary-color: #1db954;
-  --error-color: #ff5252;
-}
-
 body {
   font-family: Arial, sans-serif;
-  background-color: var(--bg-color);
-  color: var(--text-color);
+  background-color: #1e1e2f;
+  color: #fff;
   margin: 0;
   padding: 0;
   display: flex;
@@ -18,65 +11,96 @@ body {
 }
 
 .container {
-  background: #1e1e1e;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  max-width: 400px;
-  width: 100%;
-}
-
-h1 {
   text-align: center;
-  color: var(--primary-color);
-  margin-bottom: 20px;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-}
-
-label {
-  margin: 10px 0 5px;
+  padding: 20px;
+  max-width: 500px;
+  width: 100%;
+  background: #2a2a3d;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 input, select, button {
+  margin: 10px 0;
   padding: 10px;
-  margin-bottom: 15px;
+  width: 90%;
   border: none;
-  border-radius: 6px;
+  border-radius: 5px;
+  font-size: 16px;
 }
 
-input, select {
+input {
   background: #333;
-  color: var(--text-color);
+  color: #fff;
 }
 
 button {
-  background: var(--primary-color);
-  color: var(--text-color);
+  background: #4caf50;
+  color: #fff;
   cursor: pointer;
-  font-weight: bold;
 }
 
 button:hover {
-  background: #1aa34a;
+  background: #45a049;
 }
 
-#error-message {
-  color: var(--error-color);
-  margin-top: 10px;
-  text-align: center;
+.error-message {
+  color: #ff5252;
+  font-size: 14px;
   display: none;
 }
 
-#result-container {
+.result-container {
   display: none;
   flex-direction: column;
+  align-items: center;
 }
 
-#result-url {
-  background: #333;
-  color: var(--text-color);
+.result-container input {
+  width: 80%;
+}
+
+.github-repo {
+  margin-top: 20px;
+}
+
+.github-repo a {
+  color: #4caf50;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.github-repo a:hover {
+  text-decoration: underline;
+}
+
+.copied-message {
+  display: none;
+  background: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  animation: fadeInOut 2s forwards;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  80% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
 }
