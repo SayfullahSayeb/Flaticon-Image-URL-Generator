@@ -19,6 +19,7 @@ Generated Image URL:
 `https://cdn-icons-png.flaticon.com/512/1077/1077114.png`
 
 ## Screenshots
+![Screenshots](Screenshot.jpeg)
 
 
 ## Contributing
