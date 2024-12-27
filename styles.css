@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #1e1e2f;
+  background-color: #121212;
   color: #fff;
   margin: 0;
   padding: 0;
@@ -13,20 +13,27 @@ body {
 .container {
   text-align: center;
   padding: 20px;
-  max-width: 500px;
+  max-width: 400px;
   width: 100%;
-  background: #2a2a3d;
+  background: #1E1E1E;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+}
+
+h1{
+  color: #1DB954;
 }
 
 input, select, button {
   margin: 10px 0;
   padding: 10px;
-  width: 90%;
   border: none;
   border-radius: 5px;
   font-size: 16px;
+  background: #333;
+  color: var(--text-color);
 }
 
 input {
