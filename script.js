@@ -72,4 +72,9 @@ document.getElementById('search-btn').addEventListener('click', function () {
     window.open(searchUrl, '_blank');
   }
 });
+document.getElementById('search-keyword').addEventListener('keydown', function (e) {
+  if (e.key === 'Enter') {
+    document.getElementById('search-btn').click();
+  }
+});
 
