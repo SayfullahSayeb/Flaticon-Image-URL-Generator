@@ -62,3 +62,14 @@ document.getElementById('copy-btn').addEventListener('click', function () {
     copiedMessage.style.display = 'none';
   }, 2000);
 });
+
+
+document.getElementById('search-btn').addEventListener('click', function () {
+  const keyword = document.getElementById('search-keyword').value.trim();
+  if (keyword) {
+    const encoded = encodeURIComponent(keyword);
+    const searchUrl = `https://www.flaticon.com/search?word=${encoded}`;
+    window.open(searchUrl, '_blank');
+  }
+});
+
