@@ -26,6 +26,29 @@ h1{
   color: #1DB954;
 }
 
+.search-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.search-box input {
+  flex: 1;
+}
+
+.search-box button {
+  flex-shrink: 0;
+  background: #1DB954;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-box button:hover {
+  background: #17a34a;
+}
+
 input, select, button {
   margin: 10px 0;
   padding: 10px;
@@ -77,8 +100,6 @@ button:hover {
   width: 50%;
   box-sizing: border-box; 
 }
-
-
 
 .github-repo {
   margin-top: 20px;
